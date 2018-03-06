@@ -39,6 +39,7 @@ object ConsumerTest extends App with CirceSupport {
       val r: MessageTest = record.value
       println(s"Retrieved and decode case class $r")
     }
-    consumer.commitSync()
+    // If we don't want autocommit
+    // consumer.commitSync()
   }
 }
