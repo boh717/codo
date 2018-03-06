@@ -56,7 +56,6 @@ object Dependencies {
   )
 
   val kafkaReactive = Seq(
-    typesafe,
     enumero,
     enumeroCirce,
     circeJava8,
