@@ -11,7 +11,8 @@ lazy val commonResolvers = Seq(
   "Typesafe" at "http://repo.typesafe.com/typesafe/releases",
   "Typesafe Snapshots" at "http://repo.typesafe.com/typesafe/snapshots/",
   Resolver.bintrayRepo("kailuowang", "maven"),
-  Resolver.bintrayRepo("ovotech", "maven")
+  Resolver.bintrayRepo("ovotech", "maven"),
+  Resolver.bintrayRepo("cakesolutions", "maven")
 )
 
 lazy val commonSettings = Seq(
@@ -30,4 +31,10 @@ lazy val reactiveKafka = project
   .settings(commonSettings: _*)
   .settings(
     libraryDependencies ++= kafkaReactive ++ circeDependencies ++ kafkaSerializationDeps ++ log4jDependencies,
+  )
+
+lazy val cakeSolutionsKafka = project
+  .settings(commonSettings: _*)
+  .settings(
+    libraryDependencies ++= cakeKafka ++ circeDependencies ++ kafkaSerializationDeps ++ log4jDependencies,
   )
