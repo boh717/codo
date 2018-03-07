@@ -15,6 +15,7 @@ object Dependencies {
 
   val reactiveKafka = "com.typesafe.akka" %% "akka-stream-kafka" % "0.19"
   val standardKafka = "org.apache.kafka" %% "kafka" % kafkaVersion % Test exclude("org.slf4j", "slf4j-log4j12")
+  val cakeSolutionsKafka = "net.cakesolutions" %% "scala-kafka-client" % kafkaVersion
   val kafkaSerializationDeps = Seq(
     "com.ovoenergy" %% "kafka-serialization-core",
     "com.ovoenergy" %% "kafka-serialization-circe"
@@ -60,6 +61,16 @@ object Dependencies {
     enumeroCirce,
     circeJava8,
     reactiveKafka,
+    scalaTest,
+    kafkaTest
+  )
+
+  val cakeKafka = Seq(
+    typesafe,
+    enumero,
+    enumeroCirce,
+    circeJava8,
+    cakeSolutionsKafka,
     scalaTest,
     kafkaTest
   )
