@@ -1,2 +1,69 @@
+### custom ###
+other/backups/
+.DS_Store
+project/target
+test.sqlite
+target
+application.conf
+*/tags
+*/bin/
+*swp
+
+### Scala ###
 *.class
 *.log
+*.jar
+
+# sbt specific
+.cache
+.history
+.classpath
+.project
+.lib/
+dist/*
+*/target/
+*/lib_managed/
+*/src_managed/
+*/project/boot/
+*/project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Ensime
+.ensime
+.ensime_cache/
+ensime.sbt
+
+# VSCODE
+.vscode/
+
+# OneJar
+META-INF/
+
+# sass cache
+.sass-cache
+
+### Node ###
+# Logs
+logs
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+.eslintcache
+build/*
+deploy/build/*
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+*.tags*
+
+# Optional REPL history
+.node_repl_history
